@@ -45,10 +45,9 @@ const useWordle = (solution) => {
       let newGuesses = [...prevGuesses]
       newGuesses[turn] = formattedGuess
       return newGuesses 
-      newGuesses
     })
-
   }
+  
 
   // handle keyup event & track current guess
   // if user presses enter, add the new guess
