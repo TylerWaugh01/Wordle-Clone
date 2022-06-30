@@ -23,10 +23,10 @@ const useWordle = (solution) => {
     }
    })
 
-   // find any yellow colors 
+   // find any orange colors 
    formattedGuess.forEach((l, i) => {
     if (solutionArray.includes(l.key) && l.color !== 'green') {
-        formattedGuess[i].color = 'yellow'  
+        formattedGuess[i].color = 'orange'  
         solutionArray[solutionArray.indexOf(l.key)] = null
     }
    })
