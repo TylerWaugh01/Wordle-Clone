@@ -24,6 +24,7 @@ const useWordle = (solution) => {
    })
 
    // find any yellow colors 
+   // find all yellow colors 
    formattedGuess.forEach((l, i) => {
     if (solutionArray.includes(l.key) && l.color !== 'green') {
         formattedGuess[i].color = 'yellow'  
